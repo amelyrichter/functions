@@ -5,8 +5,8 @@ body {
 		--color-01: #E8090A;
 		--color-02: #36D8E7;
 		--color-03: #024D0E;
-		--color-04: #;
-		--color-05: #;
+		--color-04: #FFDD33;
+		--color-05: #FE4E1C;
 		--color-06: #;
 
 		--color-green-01: #025959;
@@ -124,6 +124,11 @@ section {
 #two {
 	background: var(--color-03);
 	color: var(--color-02);
+}
+
+#three {
+	background: var(--color-04);
+	color: var(--color-05);
 }
 
 
