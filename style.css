@@ -1,4 +1,33 @@
 
+body {
+		/* Color system */
+		--color-00: #FEA4E2;
+		--color-01: #E8090A;
+		--color-02: #;
+		--color-03: #;
+		--color-04: #;
+		--color-05: #;
+		--color-06: #;
+
+		--color-green-01: #025959;
+		--color-green-02: #0f8c8c;
+		--color-green-03: #63d248;
+		
+		--color-white: #dedfe4;
+
+		/* Font system */
+		--font-family-01: "Boldonse", system-ui;
+							font-weight: 400;
+							font-style: normal;
+		--font-family-02: "Inter Tight", sans-serif;
+							font-optical-sizing: auto;
+							font-style: normal;
+
+		margin: 0px;
+		padding: 0px;
+}
+
+
 h1 {
 	font-family: "Boldonse", system-ui;
 	font-weight: 400;
@@ -12,6 +41,19 @@ header {
 	justify-content: space-between;
 }
 
+section {
+	padding: 0px;
+}
+
+/* div {
+	padding: 0px;
+	margin: 0px;
+	display: flex;
+	flex-direction: column;
+} */
+
+
+
 
 #plus {
 	display: flex;
@@ -19,4 +61,65 @@ header {
 	justify-content: right;
 	padding: 10px;
 }
+
+.bottom-title, .top-row, .days-left  {
+	font-family: var(--font-family-02);
+}
+
+.countdown-number {
+	font-family: var(--font-family-01);
+
+}
+
+.countdown-box {
+    width: 100vw;
+    height: 220px;
+    background: var(--color-00);
+	color: var(--color-01);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    position: relative;
+	
+}
+
+.top-row {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+	padding-top: 5px;
+}
+
+.countdown-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.countdown-number {
+    font-size: 64px;
+    font-weight: bold;
+    color: var(--color-01);
+    text-align: center;
+}
+
+.days-left {
+    font-size: 16px;
+    color: #666;
+    text-align: center;
+}
+
+.bottom-title {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    color: #333;
+    /* margin-top: auto; */
+    /* padding-top: 10px; */
+	padding-bottom: 5px;
+}
+
 
