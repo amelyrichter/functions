@@ -10,10 +10,18 @@ header {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
+}
 
 #countdownDisplay {
     font-size: 20px;
     margin-top: 20px;
     font-weight: bold;
+}
+
+#plus {
+	display: flex;
+	align-items: right;
+	justify-content: right;
+	padding: 10px;
 }
 
