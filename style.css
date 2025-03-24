@@ -27,11 +27,17 @@ body {
 		padding: 0px;
 }
 
+/* fonts */
+.bottom-title, .top-row, .days-left  {
+	font-family: var(--font-family-02);
+}
 
-h1 {
-	font-family: "Boldonse", system-ui;
-	font-weight: 400;
-	font-style: normal;
+.countdown-number, footer, h1 {
+	font-family: var(--font-family-01);
+}
+
+
+h1, footer {
 	font-size: 8px;
 }
 
@@ -61,16 +67,6 @@ section {
 	justify-content: right;
 	padding: 10px;
 }
-
-.bottom-title, .top-row, .days-left  {
-	font-family: var(--font-family-02);
-}
-
-.countdown-number {
-	font-family: var(--font-family-01);
-
-}
-
 .countdown-box {
     width: 100vw;
     height: 220px;
