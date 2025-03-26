@@ -25,7 +25,7 @@ body {
 }
 
 /* fonts */
-.bottom-title, .top-row, .days-left, h1 {
+.bottom-title, .top-row, .days-left, h1, .adding-museum {
 	font-family: var(--font-family-02);
 }
 
@@ -113,6 +113,14 @@ section {
 	padding-bottom: 5px;
 }
 
+.adding-museum {
+	padding: 5px;
+	border: 1px solid black;
+	border-radius: 4px;
+	max-width: 40%;
+	margin-left: 20px;
+
+}
 
 #one {
 	background: var(--color-00);
