@@ -54,27 +54,31 @@
 				</select> -->
 
 			</section>
+
 			<section>
 				<label for="some-date">End date of the exhibition <code>&lt;input&gt;</code></label>
 				<!-- Contrast this with the `text` above. -->
 				<input id="some-date" name="some-date" type="date">
 			</section>
+
 			<section>
 				<!-- `range` sliders are always fun. -->
-				<label for="some-range">This <code>type="range"</code> one goes up to 11:</label>
+				<label for="some-range">Range how urgently <code>type="range"</code> you want to see this one:</label>
 				<input type="range" id="some-range" name="some-range" min="0" max="11" value="5">
 			</section>
+
 			<!-- Semantic groupings within `form`: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset -->
 			<fieldset>
-				<legend>Fieldsets can also group form elements</legend>
+				<legend>Fast selection museum</legend>
 				<!-- And how different the `radio` type is! -->
 				<input checked id="first-option" name="other-option" type="radio" value="first">
-				<label for="first-option">First</label>
+				<label for="first-option">MoMA</label>
 				<input id="second-option" name="other-option" type="radio" value="second">
-				<label for="second-option">Second</label>
+				<label for="second-option">Whitney</label>
 				<input id="third-option" name="other-option" type="radio" value="third">
-				<label for="third-option">Third</label>
+				<label for="third-option">The MET</label>
 			</fieldset>
+
 			<section>
 				<!-- `button` for in-page actions: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button -->
 				<button type="reset">Reset</button>
