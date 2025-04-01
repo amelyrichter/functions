@@ -19,20 +19,30 @@
 			<h1>IS OVER!</h1>
 		</header>
 
-		<p class="adding-museum">Add the museum here...</p>
+		<!-- <p class="adding-museum">Add the museum here...</p>
 		<p class="adding-museum">Add the end date here...</p>
-		<p class="adding-museum">Add the exhibition title here...</p>
+		<p class="adding-museum">Add the exhibition title here...</p> -->
 
 		<form id="some-form"></form>
+
 			<section>
 				<!-- Visible/accessible `label` connected through the `id`: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/label -->
-				<label for="some-text">This is a basic text <code>&lt;input&gt;</code>:</label>
+				<label for="some-text">Add the museum here <code>&lt;input&gt; </code>:</label>
 				<!-- Different types can control what is allowed: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input -->
-				<input id="some-text" name="some-text" placeholder="Some suggested text" required type="text">
+				<input id="some-text" name="some-text" placeholder="Museum name" required type="text">
 			</section>
+
 			<section>
+				<!-- Visible/accessible `label` connected through the `id`: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/label -->
+				<label for="some-text">Add the exhibition name here <code>&lt;input&gt; </code>:</label>
+				<!-- Different types can control what is allowed: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input -->
+				<input id="some-text" name="some-text" placeholder="Exhibition name" required type="text">
+			</section>
+
+
+			<!-- <section>
 				<label for="some-option">And a dropdown <code>&lt;select&gt;</code>:</label>
-				<!-- Classic “dropdown”: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select -->
+				classic “dropdown”: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select
 				<select id="some-option" name="some-option">
 						<option>With options</option>
 						<option>Inside here</option>
@@ -41,10 +51,11 @@
 								<option>You can organize</option>
 								<option>Options in groups</option>
 						</optgroup>
-				</select>
+				</select> -->
+
 			</section>
 			<section>
-				<label for="some-date">And then an <code>&lt;input&gt;</code> for a date:</label>
+				<label for="some-date">End date of the exhibition <code>&lt;input&gt;</code></label>
 				<!-- Contrast this with the `text` above. -->
 				<input id="some-date" name="some-date" type="date">
 			</section>
