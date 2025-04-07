@@ -14,6 +14,27 @@ document.querySelector('form').oninput = (event) => {
 	// this probably need to be something else than text content since its a date
 }
 
+const renderFormdisplay = () => {
+	let formdisplayList = document.querySelector('#formdisplay')
+	formdisplayList.innerHTML = ''
+
+	let formdisplay = localStorage.getItem('formdisplay')
+	if (!formdisplay) {
+		formdisplay = []
+	} else {
+		formdisplay = JSON.parse(formdisplay)
+	}
+	formdisplay = JSON.parse('formdisplay')
+
+	formdisplay.forEach((nameObject) => {
+		let nameItem = `
+			<li><h2>${nameObject.name}</h2></li>
+			<li><h2>${nameObject.description}</h2></li>
+			<li><h2>${nameObject.date}</h2></li>
+		`
+	})
+}
+
 document.querySelector('form').onsubmit = (event) => {
 	event.preventDefault()
 
@@ -38,27 +59,6 @@ document.querySelector('form').onsubmit = (event) => {
 
 	localStorage.setItem('formdisplay', JSON.stringify(formdisplay))
 	renderFormdisplay()
-
-	const renderFormdisplay = () => {
-		let formdisplayList = document.querySelector('#formdisplay')
-		formdisplayList.innerHTML = ''
-
-		let formdisplay = localStorage.getItem('formdisplay')
-		if (!formdisplay) {
-			formdisplay = []
-		} else {
-			formdisplay = JSON.parse(formdisplay)
-		}
-		formdisplay = JSON.parse('formdisplay')
-
-		formdisplay.forEach((nameObject) => {
-			let nameItem = `
-				<li><h2>${nameObject.name}</h2></li>
-				<li><h2>${nameObject.description}</h2></li>
-				<li><h2>${nameObject.date}</h2></li>
-			`
-		})
-	}
 }
 
 renderFormdisplay()
