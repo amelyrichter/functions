@@ -1,4 +1,4 @@
-let formdisplay = []
+// let formdisplay = []
 
 document.querySelector('form').onsubmit = (event) => event.preventDefault()
 document.querySelector('form').oninput = (event) => {
@@ -23,23 +23,42 @@ document.querySelector('form').onsubmit = (event) => {
 
 	let nameObject = {
 		name: nameValue,
-		text: exhibitionValue,
+		description: exhibitionValue,
 		date: dateValue,
 	}
 
+	let formdisplay = localStorage.getItem('formdisplay')
+	if (!formdisplay) {
+		formdisplay = []
+	} else {
+		formdisplay = JSON.parse(formdisplay)
+	}
+
 	formdisplay.push(nameObject) 
+
+	localStorage.setItem('formdisplay', JSON.stringify(formdisplay))
 	renderFormdisplay()
 
 	const renderFormdisplay = () => {
 		let formdisplayList = document.querySelector('#formdisplay')
 		formdisplayList.innerHTML = ''
 
+		let formdisplay = localStorage.getItem('formdisplay')
+		if (!formdisplay) {
+			formdisplay = []
+		} else {
+			formdisplay = JSON.parse(formdisplay)
+		}
+		formdisplay = JSON.parse('formdisplay')
+
 		formdisplay.forEach((nameObject) => {
 			let nameItem = `
 				<li><h2>${nameObject.name}</h2></li>
-				<li><h2>${nameObject.text}</h2></li>
+				<li><h2>${nameObject.description}</h2></li>
 				<li><h2>${nameObject.date}</h2></li>
 			`
 		})
 	}
 }
+
+renderFormdisplay()
