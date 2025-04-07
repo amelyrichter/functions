@@ -6,6 +6,7 @@
 		<link href="style.css" rel="stylesheet">
 		<script defer src="assets/arena.js"></script>
 		<script defer src="assets/styles.js"></script>
+		<script defer src="assets/form-state.js"></script> 
 
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,23 +20,17 @@
 			<h1>IS OVER!</h1>
 		</header>
 
-		<!-- <p class="adding-museum">Add the museum here...</p>
-		<p class="adding-museum">Add the end date here...</p>
-		<p class="adding-museum">Add the exhibition title here...</p> -->
 
 		<form id="some-form"></form>
 
 			<section>
-				<!-- Visible/accessible `label` connected through the `id`: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/label -->
-				<label for="some-text">Add the museum here <code>&lt;input&gt; </code>:</label>
-				<!-- Different types can control what is allowed: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input -->
-				<input id="some-text" name="some-text" placeholder="Museum name" required type="text">
+				<label for="name">Add the museum here <code>&lt;input&gt; </code>:</label>
+				<input type="text" id="name" name="name" placeholder="Museum name" required type="text">
+				<button type="submit">Submit</button>
 			</section>
 
 			<section>
-				<!-- Visible/accessible `label` connected through the `id`: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/label -->
 				<label for="some-text">Add the exhibition name here <code>&lt;input&gt; </code>:</label>
-				<!-- Different types can control what is allowed: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input -->
 				<input id="some-text" name="some-text" placeholder="Exhibition name" required type="text">
 			</section>
 
