@@ -24,14 +24,18 @@
 		<form id="some-form"></form>
 
 			<section>
-				<label for="name">Add the museum here <code>&lt;input&gt; </code>:</label>
+				<label for="name">Add the museum here</label>
 				<input type="text" id="name" name="name" placeholder="Museum name" required type="text">
-				<button type="submit">Submit</button>
 			</section>
 
 			<section>
-				<label for="some-text">Add the exhibition name here <code>&lt;input&gt; </code>:</label>
-				<input id="some-text" name="some-text" placeholder="Exhibition name" required type="text">
+				<label for="exhibition">Add the exhibition name here</label>
+				<input type="text" id="exhibition" name="exhibition" placeholder="Exhibition name" required type="text">
+			</section>
+
+			<section>
+				<label for="some-date">End date of the exhibition</label>
+				<input id="some-date" name="some-date" type="date">
 			</section>
 
 
@@ -48,31 +52,21 @@
 						</optgroup>
 				</select> -->
 
-			</section>
 
-			<section>
-				<label for="some-date">End date of the exhibition <code>&lt;input&gt;</code></label>
-				<!-- Contrast this with the `text` above. -->
-				<input id="some-date" name="some-date" type="date">
-			</section>
-
-			<section>
-				<!-- `range` sliders are always fun. -->
+			<!-- <section>
 				<label for="some-range">Range how urgently <code>type="range"</code> you want to see this one:</label>
 				<input type="range" id="some-range" name="some-range" min="0" max="11" value="5">
-			</section>
+			</section> -->
 
-			<!-- Semantic groupings within `form`: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset -->
-			<fieldset>
+			<!-- <fieldset>
 				<legend>Fast selection museum</legend>
-				<!-- And how different the `radio` type is! -->
 				<input checked id="first-option" name="other-option" type="radio" value="first">
 				<label for="first-option">MoMA</label>
 				<input id="second-option" name="other-option" type="radio" value="second">
 				<label for="second-option">Whitney</label>
 				<input id="third-option" name="other-option" type="radio" value="third">
 				<label for="third-option">The MET</label>
-			</fieldset>
+			</fieldset> -->
 
 			<section>
 				<!-- `button` for in-page actions: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button -->

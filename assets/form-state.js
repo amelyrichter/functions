@@ -88,3 +88,11 @@ formElement.onsubmit = (event) => event.preventDefault()
 
 // Run any time the form is modified
 formElement.oninput = () => updateUrlParams()
+
+// here starts everything from the loom
+
+document.querySelector('form').oninput = (event) => {
+	console.preventDefault()
+	
+	let name = document.querySelector('#name').value
+}
