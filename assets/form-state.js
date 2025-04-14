@@ -63,6 +63,14 @@ document.querySelector('form').onsubmit = (event) => {
 	window.location.href = 'index.html'
 }
 
+// days left calculator
+// source: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/Date
+// telling it what day it is and to pull the end date by setting up and deifining the two strings 
+function calculateDaysLeft(endDateString) {
+	const today = new Date()
+	const endDate = new Date(endDateString)
+}
+
 // renderFormdisplay()
 
 const renderFormdisplay = () => {
