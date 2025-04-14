@@ -41,11 +41,13 @@ document.querySelector('form').onsubmit = (event) => {
 	let nameValue = document.querySelector('#name').value
 	let exhibitionValue = document.querySelector('#exhibition').value
 	let dateValue = document.querySelector('#date').value
+	let daysLeftValue = calculateDaysLeft('#daysleft').value
 
 	let nameObject = {
 		name: nameValue,
 		description: exhibitionValue,
 		date: dateValue,
+		daysLeft: daysLeftValue
 	}
 
 	let formdisplay = localStorage.getItem('formdisplay')
@@ -75,6 +77,7 @@ function calculateDaysLeft(endDateString) {
 
 	today.setHours(0, 0, 0, 0)
 	endDate.setHours(0, 0, 0, 0)
+	
 }
 
 // renderFormdisplay()

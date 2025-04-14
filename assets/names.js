@@ -10,7 +10,7 @@ formdisplay.forEach((name) => {
 		<li><h2>${name.name}</h2></li>
 		<li><h2>${name.description}</h2></li>
 		<li><h2>${name.date}</h2></li>
-		<li><h2>${name.daysLeft} days left</h2></li> <!-- adding this part -->
+		<li><h2>${name.daysLeft} days left</h2></li>
 	`
 	document.querySelector('#formdisplay').insertAdjacentHTML('beforeend', nameItem)
 })
