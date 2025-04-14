@@ -81,6 +81,7 @@ const renderFormdisplay = () => {
 			<li><h2>${nameObject.name}</h2></li>
 			<li><h2>${nameObject.description}</h2></li>
 			<li><h2>${nameObject.date}</h2></li>
+			<li><h2>${nameObject.daysLeft} days left</h2></li>
 		`
 		formdisplayList.insertAdjacentHTML('beforeend', nameItem)
 	})
