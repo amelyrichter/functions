@@ -69,6 +69,12 @@ document.querySelector('form').onsubmit = (event) => {
 function calculateDaysLeft(endDateString) {
 	const today = new Date()
 	const endDate = new Date(endDateString)
+
+//setting up the time measurments for start and end datesby defining the hoursValue, minutesValue, secondsValue, msValue 
+// source : https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/setHours
+
+	today.setHours(0, 0, 0, 0)
+	endDate.setHours(0, 0, 0, 0)
 }
 
 // renderFormdisplay()
