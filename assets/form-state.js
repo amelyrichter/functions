@@ -59,6 +59,8 @@ document.querySelector('form').onsubmit = (event) => {
 
 	localStorage.setItem('formdisplay', JSON.stringify(formdisplay))
 	renderFormdisplay()
+
+	window.location.href = 'index.html'
 }
 
 // renderFormdisplay()
