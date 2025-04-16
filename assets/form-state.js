@@ -41,7 +41,7 @@ document.querySelector('form').onsubmit = (event) => {
 	let nameValue = document.querySelector('#name').value
 	let exhibitionValue = document.querySelector('#exhibition').value
 	let dateValue = document.querySelector('#date').value
-	let daysLeftValue = calculateDaysLeft('#daysleft').value
+	let daysLeftValue = calculateDaysLeft(dateValue)
 
 	let nameObject = {
 		name: nameValue,

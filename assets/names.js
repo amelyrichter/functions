@@ -21,6 +21,7 @@ formdisplay.forEach((name) => {
 	<div class="bottom-title">
 		<li><h2>${name.description}</h2></li>
 	</div>
+	</div>
 		
 	`
 	document.querySelector('#formdisplay').insertAdjacentHTML('beforeend', nameItem)
