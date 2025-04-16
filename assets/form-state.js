@@ -77,6 +77,14 @@ function calculateDaysLeft(endDateString) {
 
 	today.setHours(0, 0, 0, 0)
 	endDate.setHours(0, 0, 0, 0)
+
+// setting up the date values by dividing how many milisecs are in a day to get actual days
+// then round it up so even half a day counts as 1 day
+// source: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/ceil
+	const diffTime = endDate - today
+	const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24))
+
+	return diffDays
 	
 }
 
