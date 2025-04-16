@@ -51,6 +51,9 @@ section {
 
 ul {
 	list-style-type: none;
+	padding: 0px;
+	margin-left: 10px;
+	margin-right: 10px;
 }
 
 h2 {
@@ -75,7 +78,7 @@ h2 {
 }
 
 #some-form {
-	background-color: pink;
+	background-color: #F9DE59;
 	padding: 2rem;
 	border-radius: 1rem;
 	position: relative;
@@ -90,8 +93,8 @@ h2 {
     width: 100vw;
     /* height: 220px; */
 	border-radius: 1rem;
-	background-color: pink;
-	color: black;
+	background-color: #F4B6F9;
+	color: #DF3037;
 	text-align: center;
     display: flex;
     flex-direction: column;
