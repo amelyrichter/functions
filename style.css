@@ -208,7 +208,7 @@ h2 {
 	color: var(--color-07);
 }
 
-#name {
+#name, #date, #exhibition {
 	position: absolute;
 	width: 70%;
 	height: 5rem;
@@ -218,21 +218,10 @@ h2 {
 /* styling the input field while clicking on them with the state :focus */
 /* source: /https://www.programiz.com/css/form-styling */
   input:focus {
-	border-radius: 10px;
-    border: solid #FEA4E2;
+	color: var(--color-06);
+	border-color: var(--color-00);
 }
 
-#date {
-	position: absolute;
-	top: 1rem;
-	right: 1rem;
-	width: 40%;
-  }
-
-#exhibition {
-	margin-top: 4rem; 
-	width: 100%;
-  }
 
 
 
