@@ -82,8 +82,11 @@ h2 {
 	padding: 2rem;
 	border-radius: 1rem;
 	position: relative;
-	max-width: 500px;
+	max-width: 90%;
+	height: 80%;
 	margin: 2rem auto;
+	margin-right: 0.5rem;
+	margin-left: 0.5rem;
 	display: grid;
 	gap: 1rem;
   }
@@ -207,10 +210,17 @@ h2 {
 
 #name {
 	position: absolute;
-	top: 1rem;
-	left: 1rem;
-	width: 40%;
+	width: 70%;
+	height: 5rem;
+	border-radius: 10px;
   }
+
+/* styling the input field while clicking on them with the state :focus */
+/* source: /https://www.programiz.com/css/form-styling */
+  input:focus {
+	border-radius: 10px;
+    border: solid #FEA4E2;
+}
 
 #date {
 	position: absolute;
