@@ -67,7 +67,21 @@ button {
 	padding-left: 3rem;
 	padding-right: 3rem;
 	cursor: pointer;
-	
+}
+
+input {
+	font-family: var(--font-family-02);
+	font-size: 16px;
+	padding: 12px 16px;
+	border: 2px solid black;
+	border-radius: 12px;
+	background-color: var(--color-white);
+	color: black;
+	width: 100%;
+	box-sizing: border-box;
+	margin-bottom: 1rem;
+	outline: none;
+	transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
 /* div {
@@ -238,6 +252,7 @@ button {
 /* source: /https://www.programiz.com/css/form-styling */
   input:focus {
 	color: var(--color-06);
+	background-color: white;
 	border-color: var(--color-00);
 }
 
