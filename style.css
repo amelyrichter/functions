@@ -60,6 +60,16 @@ h2 {
 	padding: 0px;
 }
 
+button {
+	background-color: white;
+	border-radius: 10px;
+	padding: 1.5rem;
+	padding-left: 3rem;
+	padding-right: 3rem;
+	cursor: pointer;
+	
+}
+
 /* div {
 	padding: 0px;
 	margin: 0px;
@@ -67,15 +77,24 @@ h2 {
 	flex-direction: column;
 } */
 
-
-
-
-#plus {
-	display: flex;
+.plus-button {
+	/* display: flex; */
+	background-color: white;
+	border-radius: 50%;
+	box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 	align-items: right;
 	justify-content: right;
-	padding: 10px;
+	padding: 15px;
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	z-index: 1000;
+	transition: transform 0.2s ease;
 }
+
+.plus-button:hover {
+	transform: scale(1.1);
+  }
 
 #some-form {
 	background-color: #F9DE59;
