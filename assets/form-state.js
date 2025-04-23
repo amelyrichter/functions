@@ -45,9 +45,9 @@ document.querySelector('form').onsubmit = (event) => {
 
 	// window.location.href = 'index.html'
 
-	setTimeout(() => {
-		window.location.href = 'index.html'
-	}, 1000)
+	// setTimeout(() => {
+	// 	window.location.href = 'index.html'
+	// }, 1000)
 }
 
 // days left calculator
