@@ -282,16 +282,20 @@ label {
 	border-radius: 10px;
   }
 
-  #reset-button {
+  #reset-button, .adding-button {
 	margin: 2rem auto;
 	border: 2px solid black;
+	background-color: white;
 	color: black;
-	opacity: 0.5;
 	display: block; 
 	text-align: center;
   }
 
-  button.secondary:hover {
+  #reset-button {
+	opacity: 0.5;
+  }
+
+ #reset-button:hover {
 	opacity: 1;
 }
 
