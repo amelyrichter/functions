@@ -43,7 +43,11 @@ document.querySelector('form').onsubmit = (event) => {
 	localStorage.setItem('formdisplay', JSON.stringify(formdisplay))
 	renderFormdisplay()
 
-	window.location.href = 'index.html'
+	// window.location.href = 'index.html'
+
+	setTimeout(() => {
+		window.location.href = 'index.html'
+	}, 1000)
 }
 
 // days left calculator
