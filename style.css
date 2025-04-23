@@ -40,9 +40,15 @@ h1, footer {
 }
 
 header {
+	position: sticky;
+	top: 0;
+	z-index: 999;
+	background-color: white;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
+	padding: 1rem;
+	box-shadow: 0 4px 4px rgba(0,0,0,0.02)
 }
 
 section {
@@ -256,9 +262,3 @@ input {
 	background-color: white;
 	border-color: var(--color-00);
 }
-
-
-
-
-
-
