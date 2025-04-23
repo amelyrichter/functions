@@ -5,6 +5,21 @@ if (!formdisplay) {
 	formdisplay = JSON.parse(formdisplay)
 }
 
+// DOM overriding makes sure that it waits until the entire HTML has loaded before running this code
+//I am addressing it to the reset button and giving it the action on click to remove my formdisplay from localStorage
+// source: https://developer.mozilla.org/en-US/docs/Web/API/Document/DOMContentLoaded_event
+document.addEventListener('DOMContentLoaded', () => {
+	const resetButton = document.getElementById('reset-button')
+
+	if (resetButton) {
+		resetButton.addEventListener('click', () => {
+			
+			localStorage.removeItem('formdisplay')
+			document.getElementById('formdisplay').innerHTML = ''
+		})
+	}
+})
+
 //simply adding reverse() flips around the order of how the boxes are displaye – life saver
 //it does it by rendering/loading it the opposite way so the most recent added one is at the top
 //source: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reverse

@@ -97,4 +97,13 @@ const renderFormdisplay = () => {
 	})
 }
 
+document.getElementById('reset-button').addEventListener('click', () => {
+	localStorage.removeItem('formdisplay')
+	
+	document.getElementById('formdisplay').innerHTML = ''
+	document.getElementById('some-form').reset()
+
+	window.location.href = 'index.html'
+})
+
 renderFormdisplay()
