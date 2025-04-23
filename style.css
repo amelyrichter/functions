@@ -35,7 +35,7 @@ body {
 
 
 h1, footer {
-	font-size: 15px;
+	font-size: 10px;
 	font-weight: 900;
 }
 
@@ -149,7 +149,7 @@ form section {
 
 
 .countdown-box {
-    width: 100vw;
+    /* width: 100vw; */
     /* height: 220px; */
 	border-radius: 1rem;
 	background-color: #F4B6F9;
