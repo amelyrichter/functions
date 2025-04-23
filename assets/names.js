@@ -5,7 +5,10 @@ if (!formdisplay) {
 	formdisplay = JSON.parse(formdisplay)
 }
 
-formdisplay.forEach((name) => {
+//simply adding reverse() flips around the order of how the boxes are displaye – life saver
+//it does it by rendering/loading it the opposite way so the most recent added one is at the top
+//source: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reverse
+formdisplay.reverse().forEach((name) => {
 	let nameItem = `
 	<div class="countdown-box">
 	<div class="top-row">
